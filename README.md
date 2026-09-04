@@ -1,7 +1,7 @@
 <h1 align="center">Ani Cave</h1>
 <p align="center">
   <a href="https://github.com/VJBots/VJ-Video-Player">
-    <img src="https://i.ibb.co/Yz4y12n/photo-2025-06-16-10-05-31-7516486294654943252.jpg" alt="Cover Image" width="550">
+    <img src="https://i.iz4y12n/photo-2025-06-16-10-05-31-7516486294654943252.jpg" alt="Cover Image" width="550">
   </a>
 </p>  
   <p align="center">

@@ -1,4 +1,4 @@
-<h1 align="center">VJ Video Player</h1>
+<h1 align="center">Ani Cave</h1>
 <p align="center">
   <a href="https://github.com/VJBots/VJ-Video-Player">
     <img src="https://i.ibb.co/Yz4y12n/photo-2025-06-16-10-05-31-7516486294654943252.jpg" alt="Cover Image" width="550">

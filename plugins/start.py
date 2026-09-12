@@ -186,7 +186,7 @@ async def quality_link(client, message):
         params = {'u': message.from_user.id, 'w': first_id, 's': second_id, 't': third_id}
         url1 = f"{urlencode(params)}"
         link = await encode(url1)
-        encoded_url = f"{LINK_URL}?Tech_VJ={link}"
+        encoded_url = f"{LINK_URL}?AniCave={link}"
         rm=InlineKeyboardMarkup([[InlineKeyboardButton("🖇️ Open Link", url=encoded_url)]])
         return await message.reply_text(text=f"<code>{encoded_url}</code>", reply_markup=rm)
     else:
@@ -195,7 +195,7 @@ async def quality_link(client, message):
     params = {'u': message.from_user.id, 'w': first_id, 's': second_id, 't': third_id}
     url1 = f"{urlencode(params)}"
     link = await encode(url1)
-    encoded_url = f"{LINK_URL}?Tech_VJ={link}"
+    encoded_url = f"{LINK_URL}?AniCave={link}"
     rm=InlineKeyboardMarkup([[InlineKeyboardButton("🖇️ Open Link", url=encoded_url)]])
     await message.reply_text(text=f"<code>{encoded_url}</code>", reply_markup=rm)
 
@@ -203,7 +203,7 @@ async def quality_link(client, message):
 async def link_start(client, message):
     if not message.text.startswith(LINK_URL):
         return
-    link_part = message.text[len(LINK_URL + "?Tech_VJ="):].strip()
+    link_part = message.text[len(LINK_URL + "?AniCave="):].strip()
     try:
         original = await decode(link_part)
     except:
@@ -221,7 +221,7 @@ async def link_start(client, message):
     params = {'u': message.from_user.id, 'w': str(id), 's': str(sec), 't': str(th)}
     url1 = f"{urlencode(params)}"
     link = await encode(url1)
-    encoded_url = f"{LINK_URL}?Tech_VJ={link}"
+    encoded_url = f"{LINK_URL}?AniCave={link}"
     rm=InlineKeyboardMarkup([[InlineKeyboardButton("🖇️ Open Link", url=encoded_url)]])
     await message.reply_text(text=f"<code>{encoded_url}</code>", reply_markup=rm)
 

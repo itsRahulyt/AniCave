@@ -110,7 +110,11 @@ async def stream_handler(request: web.Request):
         thid = int(await decode(th))
         return web.Response(text=await render_page(id, user_id, secid, thid), content_type='text/html')
     except Exception as e:
-        return web.Response(text=html_content, content_type='text/html')
+    logging.exception("STREAM HANDLER ERROR")
+    return web.Response(
+        text=f"Render error: {e}",
+        status=500
+    )
     return 
 
 @routes.post('/click-counter')

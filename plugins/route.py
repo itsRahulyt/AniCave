@@ -112,6 +112,9 @@ async def stream_handler(request: web.Request):
     except Exception as e:
     logging.exception("STREAM HANDLER ERROR")
     return web.Response(
+        text=html_content,
+        content_type='text/html'
+    )
         text=f"Render error: {e}",
         status=500
     )
